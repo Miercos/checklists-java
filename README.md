@@ -2,7 +2,6 @@
 An all-in-one checklist program for Java
 
 Checklists supported: ShoppingList and TodoList
-
 Checklists coming soon: GoalList and TeamList
 
 A ShoppingList is a simple list of items that reminds a user what they need to purchase on a shopping trip. It is associated with a single user.
