@@ -1,10 +1,11 @@
+package main;
 /**
  * an Item simply stores data
  * @author Marcos
  *
  */
 public class Item {
-	private String data;
+	protected String data;
 	
 	public Item(String data) {
 		this.data = data;
@@ -16,5 +17,10 @@ public class Item {
 	
 	public void setData(String newData) {
 		data = newData;
+	}
+	
+	// what's cool about this is printing items is actually useful instead of showing an array of objects
+	public String toString() {
+		return data;
 	}
 }

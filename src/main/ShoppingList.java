@@ -1,3 +1,4 @@
+package main;
 /**
  * a ShoppingList is the most basic Checklist and is merely an instance of a Checklistf
  * @author Marcos

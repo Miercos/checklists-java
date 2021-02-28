@@ -1,3 +1,5 @@
+package main;
+
 import java.util.*;
 /**
  * a Checklist stores items, each of which functions differently
@@ -7,7 +9,7 @@ import java.util.*;
  */
 public abstract class Checklist {
 	private String name;
-	private ArrayList<Item> items;
+	protected ArrayList<Item> items;
 	
 	public Checklist(String name) {
 		System.out.println("Checklist constructor called");
@@ -27,10 +29,14 @@ public abstract class Checklist {
 		items.remove(itemIndex);
 	}
 	
+	public String getName() {
+		return name;
+	}
+	
 	public void printList() {
 		System.out.println(name);
 		for(int i = 0; i < items.size(); i++) {
-			System.out.println((i+1) + ". " + items.get(i).getData());
+			System.out.println((i+1) + ". " + items.get(i).toString());
 		}
 	}
 }
