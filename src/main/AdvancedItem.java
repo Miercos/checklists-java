@@ -1,16 +1,16 @@
 package main;
 /**
- * TodoItem represents a TodoList item and can be ordered, assigned a start date and/or end date (deadline)
+ * An AdvancedItem supports start dates, end dates, and may be assigned a priority (but that is handled at the list level)
  * @author Marcos
  *
  */
-public class TodoItem extends Item {
+public class AdvancedItem extends Item {
 	private SimpleDate startDate;
 	private SimpleDate endDate;
 	private boolean startDateSet;
 	private boolean endDateSet;
 	
-	public TodoItem(String data) {
+	public AdvancedItem(String data) {
 		super(data);
 		startDate = new SimpleDate();
 		endDate = new SimpleDate();

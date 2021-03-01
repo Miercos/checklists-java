@@ -19,7 +19,6 @@ public class TodoList extends Checklist {
 	 */
 	public void setItemPriority(int itemIndex, int priority) {
 		// is this cheaty or are we just taking advantage of ArrayLists?
-		// this was super simple, what did we do before? I think we were doing it manually...
 		super.items.add(priority, super.items.get(itemIndex));
 		super.items.remove(itemIndex + 1);
 	}

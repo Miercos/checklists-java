@@ -9,12 +9,12 @@ public class Main {
 		slist.printList();
 		
 		TodoList tlist = new TodoList("list 2");
-		TodoItem titem = new TodoItem("do this");
+		AdvancedItem titem = new AdvancedItem("do this");
 		// item due 3/2/21 at noon
 		//titem.setEndDate(2021, 3, 1, 12, 0);
 		tlist.addItem(titem);
-		tlist.addItem(new TodoItem("do that"));
-		tlist.addItem(new TodoItem("eat booty"));
+		tlist.addItem(new AdvancedItem("do that"));
+		tlist.addItem(new AdvancedItem("eat booty"));
 		tlist.printList();
 		tlist.setItemPriority(2, 0);
 		tlist.printList();
