@@ -1,7 +1,8 @@
 package main;
 import java.util.*;
 /**
- * A Goal may have any number of subgoals
+ * A Goal functions the same as an AdvancedItem, except it supports any number of subgoals,
+ * which may also have any number of subgoals and so on
  * @author Marcos
  *
  */
@@ -14,10 +15,6 @@ public class Goal extends AdvancedItem {
 		System.out.println("Goal constructor called");
 	}
 	
-	/**
-	 * Adds a subgoal to the list of subgoals
-	 * @param subgoal is the subgoal being added
-	 */
 	public void addSubgoal(Goal subgoal) {
 		subgoals.add(subgoal);
 	}
