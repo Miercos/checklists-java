@@ -7,7 +7,7 @@ import java.util.*;
  * @author Marcos
  *
  */
-public abstract class Checklist {
+public class Checklist {
 	private String name;
 	protected ArrayList<Item> items;
 	

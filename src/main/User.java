@@ -33,7 +33,7 @@ public class User {
 	 * @param priority is new priority of the list
 	 */
 	public void setListPriority(int listIndex, int priority) {
-		if(lists.get(listIndex) instanceof TodoList) {
+		if(lists.get(listIndex) instanceof AdvancedList) {
 			lists.add(priority, lists.get(listIndex));
 			lists.remove(listIndex + 1);
 		}

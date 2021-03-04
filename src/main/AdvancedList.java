@@ -1,13 +1,13 @@
 package main;
 
 /**
- * TodoList is a special kind of Checklist
+ * might change TodoList to AdvancedList 
  * @author Marcos
  *
  */
-public class TodoList extends Checklist {
+public class AdvancedList extends Checklist {
 
-	public TodoList(String name) {
+	public AdvancedList(String name) {
 		super(name);
 		System.out.println("TodoList constructor called");
 	}
@@ -18,7 +18,6 @@ public class TodoList extends Checklist {
 	 * @param priority is the new priority of the item
 	 */
 	public void setItemPriority(int itemIndex, int priority) {
-		// is this cheaty or are we just taking advantage of ArrayLists?
 		super.items.add(priority, super.items.get(itemIndex));
 		super.items.remove(itemIndex + 1);
 	}
