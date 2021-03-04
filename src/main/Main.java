@@ -2,13 +2,13 @@ package main;
 public class Main {
 
 	public static void main(String[] args) {
-		Checklist slist = new ShoppingList("list 1");
+		Checklist slist = new Checklist("list 1");
 		slist.addItem(new Item("eggs"));
 		slist.addItem(new Item("milk"));
 		slist.addItem(new Item("cheese"));
 		slist.printList();
 		
-		TodoList tlist = new TodoList("list 2");
+		AdvancedList tlist = new AdvancedList("list 2");
 		AdvancedItem titem = new AdvancedItem("do this");
 		// item due 3/2/21 at noon
 		//titem.setEndDate(2021, 3, 1, 12, 0);
